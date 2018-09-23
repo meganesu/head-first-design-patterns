@@ -9,7 +9,7 @@ public class QueenTest {
     @Test
     public void shouldPrintFightMessage() {
         WeaponBehavior weapon = mock(SwordBehavior.class);
-        Queen queen = new Queen(weapon);
+        Character queen = new Queen(weapon);
 
         PrintStream printStream = mock(PrintStream.class);
         System.setOut(printStream);

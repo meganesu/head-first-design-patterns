@@ -1,6 +1,4 @@
-public class Troll {
-
-    private WeaponBehavior weapon;
+public class Troll extends Character {
 
     public Troll(WeaponBehavior weapon) {
         this.weapon = weapon;

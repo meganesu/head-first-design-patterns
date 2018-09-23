@@ -9,7 +9,7 @@ public class TrollTest {
     @Test
     public void shouldPrintFightMessage() {
         WeaponBehavior weapon = mock(KnifeBehavior.class);
-        Troll troll = new Troll(weapon);
+        Character troll = new Troll(weapon);
 
         PrintStream printStream = mock(PrintStream.class);
         System.setOut(printStream);

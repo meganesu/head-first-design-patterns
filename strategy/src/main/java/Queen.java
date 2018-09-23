@@ -1,5 +1,4 @@
-public class Queen {
-    private final WeaponBehavior weapon;
+public class Queen extends Character {
 
     public Queen(WeaponBehavior weapon) {
         this.weapon = weapon;
