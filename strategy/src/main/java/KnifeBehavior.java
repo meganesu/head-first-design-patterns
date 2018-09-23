@@ -1,4 +1,4 @@
-public class Knife implements WeaponBehavior {
+public class KnifeBehavior implements WeaponBehavior {
     public void useWeapon() {
         System.out.println("Stab with knife");
     }

@@ -5,16 +5,16 @@ import java.io.PrintStream;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-public class BowAndArrowTest {
+public class AxeBehaviorTest {
     @Test
-    public void shouldPrintBowAndArrowMessage() {
-        WeaponBehavior bowAndArrow = new BowAndArrow();
+    public void shouldPrintAxeMessage() {
+        WeaponBehavior axe = new AxeBehavior();
 
         PrintStream printStream = mock(PrintStream.class);
         System.setOut(printStream);
 
-        bowAndArrow.useWeapon();
+        axe.useWeapon();
 
-        verify(printStream).println("Shoot arrow");
+        verify(printStream).println("Swing axe");
     }
 }

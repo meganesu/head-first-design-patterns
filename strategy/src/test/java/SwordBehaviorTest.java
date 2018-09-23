@@ -6,16 +6,16 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-public class KnifeTest {
+public class SwordBehaviorTest {
     @Test
-    public void shouldPrintKnifeMessage() {
-        WeaponBehavior knife = new Knife();
+    public void shouldPrintSwordMessage() {
+        WeaponBehavior sword = new SwordBehavior();
 
         PrintStream printStream = mock(PrintStream.class);
         System.setOut(printStream);
 
-        knife.useWeapon();
+        sword.useWeapon();
 
-        verify(printStream).println("Stab with knife");
+        verify(printStream).println("Swing sword");
     }
 }

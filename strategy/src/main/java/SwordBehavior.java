@@ -1,4 +1,4 @@
-public class Sword implements WeaponBehavior {
+public class SwordBehavior implements WeaponBehavior {
     public void useWeapon() {
         System.out.println("Swing sword");
     }
