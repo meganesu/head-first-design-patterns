@@ -1,3 +1,3 @@
 public interface WeaponBehavior {
-    String useWeapon();
+    void useWeapon();
 }

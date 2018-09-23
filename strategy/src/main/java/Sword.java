@@ -1,5 +1,5 @@
 public class Sword implements WeaponBehavior {
-    public String useWeapon() {
-        return "Swing sword";
+    public void useWeapon() {
+        System.out.println("Swing sword");
     }
 }

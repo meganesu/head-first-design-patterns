@@ -1,5 +1,5 @@
 public class Knife implements WeaponBehavior {
-    public String useWeapon() {
-        return "Stab with knife";
+    public void useWeapon() {
+        System.out.println("Stab with knife");
     }
 }
