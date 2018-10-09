@@ -15,10 +15,10 @@ public class WeatherData {
         this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;
-        notifyObserver();
+        notifyObservers();
     }
 
-    private void notifyObserver() {
+    private void notifyObservers() {
         for (CurrentConditionsDisplay display : displays) {
             display.update(temperature, humidity, pressure);
         }
