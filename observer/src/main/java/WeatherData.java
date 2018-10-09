@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 
-public class WeatherData {
+public class WeatherData implements Observable {
     private float temperature;
     private float humidity;
     private float pressure;
 
-    private ArrayList<CurrentConditionsDisplay> displays;
+    private ArrayList<Observer> observers;
 
     WeatherData() {
-        this.displays = new ArrayList<>();
+        this.observers = new ArrayList<>();
     }
 
     public void setMeasurements(float temperature, float humidity, float pressure) {
@@ -18,13 +18,15 @@ public class WeatherData {
         notifyObservers();
     }
 
-    private void notifyObservers() {
-        for (CurrentConditionsDisplay display : displays) {
-            display.update(temperature, humidity, pressure);
+    @Override
+    public void notifyObservers() {
+        for (Observer observer : observers) {
+            observer.update(temperature, humidity, pressure);
         }
     }
 
-    public void registerObserver(CurrentConditionsDisplay currentConditionsDisplay) {
-        this.displays.add(currentConditionsDisplay);
+    @Override
+    public void registerObserver(Observer observer) {
+        this.observers.add(observer);
     }
 }
