@@ -29,4 +29,9 @@ public class WeatherData implements Observable {
     public void registerObserver(Observer observer) {
         this.observers.add(observer);
     }
+
+    @Override
+    public void removeObserver(Observer observer) {
+        this.observers.remove(observer);
+    }
 }
