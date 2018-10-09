@@ -1,4 +1,4 @@
-public class CurrentConditionsDisplay {
+public class CurrentConditionsDisplay implements Display {
     private float temperature;
     private float humidity;
 
