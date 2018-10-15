@@ -1,4 +1,4 @@
-public class Mocha extends Beverage {
+public class Mocha extends CondimentDecorator {
     Beverage beverage;
 
     public Mocha(Beverage beverage) {
