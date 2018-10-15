@@ -14,4 +14,11 @@ public class HouseBlendTest {
         HouseBlend coffee = new HouseBlend();
         assertEquals("House blend", coffee.getDescription());
     }
+
+    @Test
+    public void shouldUpdateSize() {
+        HouseBlend coffee = new HouseBlend();
+        coffee.setSize(HouseBlend.Size.VENTI);
+        assertEquals(HouseBlend.Size.VENTI, coffee.getSize());
+    }
 }
