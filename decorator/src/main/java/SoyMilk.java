@@ -8,7 +8,10 @@ public class SoyMilk extends Beverage {
 
     @Override
     public double cost() {
-        return beverage.cost() + 0.15;
+        if (beverage.getSize() == Size.TALL) return beverage.cost() + 0.10;
+        else if (beverage.getSize() == Size.GRANDE) return beverage.cost() + 0.15;
+        else if (beverage.getSize() == Size.VENTI) return beverage.cost() + 0.20;
+        return -1;
     }
 
     @Override

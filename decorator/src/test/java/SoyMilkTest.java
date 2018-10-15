@@ -7,11 +7,23 @@ import static org.mockito.Mockito.when;
 public class SoyMilkTest {
     @Test
     public void shouldAddCorrectCostToBeverage() {
-        Beverage coffee = mock(HouseBlend.class);
-        when(coffee.cost()).thenReturn(0.89);
-        coffee = new SoyMilk(coffee);
+        Beverage smallCoffee = mock(HouseBlend.class);
+        Beverage mediumCoffee = mock(HouseBlend.class);
+        Beverage largeCoffee = mock(HouseBlend.class);
+        when(smallCoffee.cost()).thenReturn(0.89);
+        when(smallCoffee.getSize()).thenReturn(Beverage.Size.TALL);
+        when(mediumCoffee.cost()).thenReturn(0.89);
+        when(mediumCoffee.getSize()).thenReturn(Beverage.Size.GRANDE);
+        when(largeCoffee.cost()).thenReturn(0.89);
+        when(largeCoffee.getSize()).thenReturn(Beverage.Size.VENTI);
 
-        assertEquals(0.89 + 0.15, coffee.cost(), 0.00001);
+        smallCoffee = new SoyMilk(smallCoffee);
+        mediumCoffee = new SoyMilk(mediumCoffee);
+        largeCoffee = new SoyMilk(largeCoffee);
+
+        assertEquals(0.89 + 0.10, smallCoffee.cost(), 0.00001);
+        assertEquals(0.89 + 0.15, mediumCoffee.cost(), 0.00001);
+        assertEquals(0.89 + 0.20, largeCoffee.cost(), 0.00001);
     }
 
     @Test
