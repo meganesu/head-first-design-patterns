@@ -1,8 +1,13 @@
 public class PizzaStore {
+    SimplePizzaFactory pizzaFactory;
+
+    public PizzaStore(SimplePizzaFactory pizzaFactory) {
+        this.pizzaFactory = pizzaFactory;
+    }
+
     public Pizza orderPizza(String type) {
         System.out.println(String.format("Placing an order for one %s pizza", type));
         Pizza pizza = null;
-        SimplePizzaFactory pizzaFactory = new SimplePizzaFactory();
 
         pizza = pizzaFactory.createPizza(type);
 
