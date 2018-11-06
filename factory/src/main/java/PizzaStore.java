@@ -1,7 +1,7 @@
 public class PizzaStore {
-    SimplePizzaFactory pizzaFactory;
+    PizzaFactory pizzaFactory;
 
-    public PizzaStore(SimplePizzaFactory pizzaFactory) {
+    public PizzaStore(PizzaFactory pizzaFactory) {
         this.pizzaFactory = pizzaFactory;
     }
 

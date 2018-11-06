@@ -1,4 +1,4 @@
-public class NYPizzaFactory {
+public class NYPizzaFactory extends PizzaFactory {
     public Pizza createPizza(String type) {
         Pizza pizza = null;
 
