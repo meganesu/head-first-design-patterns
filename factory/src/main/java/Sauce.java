@@ -1,3 +1,2 @@
-public class
-Sauce {
+public class Sauce {
 }
