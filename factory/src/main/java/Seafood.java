@@ -1,2 +1,2 @@
-public class Seafood {
+public abstract class Seafood {
 }

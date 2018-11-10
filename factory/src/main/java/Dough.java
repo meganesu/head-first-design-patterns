@@ -1,2 +1,2 @@
-public class Dough {
+public abstract class Dough {
 }
