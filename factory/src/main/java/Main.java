@@ -3,10 +3,7 @@ public class Main {
         PizzaStore nyPizzaStore = new NYPizzaStore();
         PizzaStore chicagoPizzaStore = new ChicagoPizzaStore();
 
-        Pizza pizza = nyPizzaStore.orderPizza("cheese");
-        System.out.println("Megan ordered a " + pizza.getName() + "\n");
-
-        pizza = chicagoPizzaStore.orderPizza("cheese");
-        System.out.println("Erin ordered a " + pizza.getName() + "\n");
+        Pizza pizza1 = nyPizzaStore.orderPizza("cheese");
+        Pizza pizza2 = chicagoPizzaStore.orderPizza("cheese");
     }
 }

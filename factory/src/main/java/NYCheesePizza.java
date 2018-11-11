@@ -1,6 +1,8 @@
 public class NYCheesePizza extends Pizza {
-    @Override
-    public String getName() {
-        return "NY Cheese Pizza";
+    public NYCheesePizza() {
+        name = "NY Cheese Pizza";
+        dough = "Thin Crust Dough";
+        sauce = "Marinara Sauce";
+        toppings.add("Reggiano Cheese");
     }
 }

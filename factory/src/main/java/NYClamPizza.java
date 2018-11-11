@@ -1,6 +1,9 @@
 public class NYClamPizza extends Pizza {
-    @Override
-    public String getName() {
-        return "NY Clam Pizza";
+    public NYClamPizza() {
+        name = "NY Clam Pizza";
+        dough = "Thin Crust Dough";
+        sauce = "Marinara Sauce";
+        toppings.add("Reggiano Cheese");
+        toppings.add("Fresh Clams");
     }
 }
