@@ -1,4 +1,6 @@
 public abstract class Pizza {
+    public abstract String getName();
+
     public void prepare() {
         System.out.println("Adding toppings to pizza...");
     }
