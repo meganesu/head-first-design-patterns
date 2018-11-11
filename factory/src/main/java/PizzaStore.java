@@ -1,15 +1,9 @@
-public class PizzaStore {
-    PizzaFactory pizzaFactory;
-
-    public PizzaStore(PizzaFactory pizzaFactory) {
-        this.pizzaFactory = pizzaFactory;
-    }
-
+public abstract class PizzaStore {
     public Pizza orderPizza(String type) {
         System.out.println(String.format("Placing an order for one %s pizza", type));
         Pizza pizza = null;
 
-        pizza = pizzaFactory.createPizza(type);
+        pizza = createPizza(type);
 
         pizza.prepare();
         pizza.bake();
@@ -20,4 +14,6 @@ public class PizzaStore {
 
         return pizza;
     }
+
+    public abstract Pizza createPizza(String type);
 }

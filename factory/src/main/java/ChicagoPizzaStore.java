@@ -1,4 +1,5 @@
-public class ChicagoPizzaFactory extends PizzaFactory {
+public class ChicagoPizzaStore extends PizzaStore {
+    @Override
     public Pizza createPizza(String type) {
         Pizza pizza = null;
 
