@@ -1,9 +1,9 @@
 public class ChicagoPepperoniPizza extends Pizza {
     public ChicagoPepperoniPizza() {
         name = "Chicago Pepperoni Pizza";
-        dough = "Thick Crust Dough";
-        sauce = "Plum Tomato Sauce";
-        toppings.add("Mozzarella Cheese");
-        toppings.add("Pepperoni");
+        dough = new ThickCrustDough();
+        sauce = new PlumTomatoSauce();
+        toppings.add(new MozzarellaCheese());
+//        toppings.add("Pepperoni");
     }
 }

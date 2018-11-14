@@ -1,8 +1,8 @@
 public class ChicagoCheesePizza extends Pizza {
     public ChicagoCheesePizza() {
         name = "Chicago Cheese Pizza";
-        dough = "Thick Crust Dough";
-        sauce = "Plum Tomato Sauce";
-        toppings.add("Mozzarella Cheese");
+        dough = new ThickCrustDough();
+        sauce = new PlumTomatoSauce();
+        toppings.add(new MozzarellaCheese());
     }
 }
