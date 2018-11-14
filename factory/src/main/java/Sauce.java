@@ -1,2 +1,2 @@
-public abstract class Sauce {
+public interface Sauce extends Topping {
 }

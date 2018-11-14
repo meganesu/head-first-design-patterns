@@ -1,2 +1,2 @@
-public class ReggianoCheese extends Cheese {
+public class ReggianoCheese implements Cheese {
 }

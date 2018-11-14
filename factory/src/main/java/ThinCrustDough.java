@@ -1,2 +1,2 @@
-public class ThinCrustDough extends Dough {
+public class ThinCrustDough implements Dough {
 }

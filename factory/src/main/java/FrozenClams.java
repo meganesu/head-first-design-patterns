@@ -1,2 +1,2 @@
-public class FrozenClams extends Seafood {
+public class FrozenClams implements Seafood {
 }

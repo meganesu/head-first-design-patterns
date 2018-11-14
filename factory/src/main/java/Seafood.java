@@ -1,2 +1,2 @@
-public abstract class Seafood {
+public interface Seafood extends Topping {
 }

@@ -1,2 +1,2 @@
-public class FreshClams extends Seafood {
+public class FreshClams implements Seafood {
 }

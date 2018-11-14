@@ -1,2 +1,2 @@
-public abstract class Cheese {
+public interface Cheese extends Topping {
 }

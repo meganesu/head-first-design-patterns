@@ -1,2 +1,2 @@
-public abstract class Dough {
+public interface Dough {
 }
