@@ -18,4 +18,7 @@ public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
     public Seafood createSeafood() {
         return new FrozenClams();
     }
+
+    @Override
+    public Pepperoni createPepperoni() { return new Pepperoni(); }
 }
