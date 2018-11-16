@@ -15,24 +15,24 @@ public class ChicagoPizzaStoreTest {
     @Test
     public void shouldReturnChicagoCheesePizzaWhenChicagoPizzaFactory() {
         Pizza pizza = pizzaStore.orderPizza("cheese");
-        assertThat(pizza, instanceOf(ChicagoCheesePizza.class));
+        assertThat(pizza, instanceOf(CheesePizza.class));
     }
 
     @Test
     public void shouldReturnChicagoPepperoniPizzaWhenChicagoPizzaFactory() {
         Pizza pizza = pizzaStore.orderPizza("pepperoni");
-        assertThat(pizza, instanceOf(ChicagoPepperoniPizza.class));
+        assertThat(pizza, instanceOf(PepperoniPizza.class));
     }
 
     @Test
     public void shouldReturnChicagoVeggiePizzaWhenChicagoPizzaFactory() {
         Pizza pizza = pizzaStore.orderPizza("veggie");
-        assertThat(pizza, instanceOf(ChicagoVeggiePizza.class));
+        assertThat(pizza, instanceOf(VeggiePizza.class));
     }
 
     @Test
     public void shouldReturnChicagoSeafoodPizzaWhenChicagoPizzaFactory() {
         Pizza pizza = pizzaStore.orderPizza("seafood");
-        assertThat(pizza, instanceOf(ChicagoClamPizza.class));
+        assertThat(pizza, instanceOf(SeafoodPizza.class));
     }
 }
