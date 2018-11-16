@@ -8,11 +8,11 @@ public abstract class Pizza {
 
     public void prepare() {
         System.out.println("Preparing " + name);
-        System.out.println("Tossing " + dough);
-        System.out.println("Adding " + sauce);
+        System.out.println("Tossing " + dough.getName());
+        System.out.println("Adding " + sauce.getName());
         System.out.println("Adding toppings to pizza...");
         for (Topping topping : toppings) {
-            System.out.println("   " + topping.toString());
+            System.out.println("   " + topping.getName());
         }
     }
 
