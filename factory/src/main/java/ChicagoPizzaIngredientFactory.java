@@ -21,4 +21,7 @@ public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
 
     @Override
     public Pepperoni createPepperoni() { return new Pepperoni(); }
+
+    @Override
+    public Vegetable createVegetable() { return new Mushrooms(); }
 }

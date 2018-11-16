@@ -35,4 +35,16 @@ public class NYPizzaIngredientFactoryTest {
         Seafood seafood = ingredientFactory.createSeafood();
         assertThat(seafood, instanceOf(FreshClams.class));
     }
+
+    @Test
+    public void shouldReturnPepperoni() {
+        Pepperoni pepperoni = ingredientFactory.createPepperoni();
+        assertThat(pepperoni, instanceOf(Pepperoni.class));
+    }
+
+    @Test
+    public void shouldReturnBellPeppers() {
+        Vegetable vegetable = ingredientFactory.createVegetable();
+        assertThat(vegetable, instanceOf(BellPeppers.class));
+    }
 }

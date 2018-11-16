@@ -4,4 +4,5 @@ public interface PizzaIngredientFactory {
     Cheese createCheese();
     Seafood createSeafood();
     Pepperoni createPepperoni();
+    Vegetable createVegetable();
 }
