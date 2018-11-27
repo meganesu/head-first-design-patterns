@@ -3,4 +3,5 @@ include 'strategy'
 include 'observer'
 include 'decorator'
 include 'factory'
+include 'singleton'
 
