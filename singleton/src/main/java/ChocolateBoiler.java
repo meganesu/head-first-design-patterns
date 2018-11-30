@@ -1,8 +1,9 @@
 public class ChocolateBoiler {
+    private static ChocolateBoiler singletonBoiler;
     private boolean empty;
     private boolean boiled;
 
-    public ChocolateBoiler() {
+    private ChocolateBoiler() {
         empty = true;
         boiled = false;
     }
@@ -32,5 +33,12 @@ public class ChocolateBoiler {
 
     public boolean isBoiled() {
         return boiled;
+    }
+
+    public static ChocolateBoiler getInstance() {
+        if (singletonBoiler == null) {
+            singletonBoiler = new ChocolateBoiler();
+        }
+        return singletonBoiler;
     }
 }
