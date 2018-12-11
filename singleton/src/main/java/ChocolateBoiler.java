@@ -37,7 +37,11 @@ public class ChocolateBoiler {
 
     public static ChocolateBoiler getInstance() {
         if (singletonBoiler == null) {
-            singletonBoiler = new ChocolateBoiler();
+            synchronized (ChocolateBoiler.class) {
+                if (singletonBoiler == null) {
+                    singletonBoiler = new ChocolateBoiler();
+                }
+            }
         }
         return singletonBoiler;
     }
